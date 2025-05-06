@@ -202,7 +202,7 @@
         </section>
         <!-- end of photo portfolio section -->
 
-        <!-- video portfolio section-->
+        <!-- video portfolio section -->
         <section id="video-portfolio" class="vh-100 py-7">
             <div class="container">
                 <div class="portfolio-content">
@@ -213,20 +213,29 @@
                         </a>
                     </div>
 
-                    <div class="portfolio-grid grid">
-                        <!-- below are Armaan's portfolio videos-->
-                        <div><img src="images/port-1.jpg"></div>
-                        <div><img src="images/port-2.jpg"></div>
-                        <div><img src="images/port-3.jpg"></div>
-                        <div><img src="images/port-4.jpg"></div>
-                        <div><img src="images/port-5.jpg"></div>
-                        <div><img src="images/port-6.jpg"></div>
-                        <div><img src="images/port-7.jpg"></div>
+                    <div class="portfolio-grid video-grid">
+                        <!-- Video 1 -->
+                        <a href="https://www.youtube.com/watch?v=dGH-Zyb17hg" class="glightbox video-card"
+                            data-type="video">
+                            <img src="https://img.youtube.com/vi/dGH-Zyb17hg/hqdefault.jpg" alt="Video 1 Thumbnail">
+                        </a>
+
+                        <!-- Video 2 -->
+                        <a href="https://www.youtube.com/watch?v=vM9mRgAggmQ" class="glightbox video-card"
+                            data-type="video">
+                            <img src="https://img.youtube.com/vi/vM9mRgAggmQ/hqdefault.jpg" alt="Video 2 Thumbnail">
+                        </a>
+
+                        <!-- Video 3 -->
+                        <a href="https://www.youtube.com/watch?v=nTQ7Kuin3go" class="glightbox video-card"
+                            data-type="video">
+                            <img src="https://img.youtube.com/vi/nTQ7Kuin3go/hqdefault.jpg" alt="Video 3 Thumbnail">
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end of video portfolio section -->
+
 
         <!-- testimonials section -->
         <section id="testimonials" class="vh-100 flex">
@@ -308,9 +317,18 @@
     <!-- end of main content-->
 
     <!-- typewriting js -->
-    <script src="typewriting.js">
+    <script src="typewriting.js"></script>
 
+    <!-- GLightbox script & styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox'
+        });
     </script>
+
 </body>
 <footer>
     Website Designer: Rayyan Khan,
