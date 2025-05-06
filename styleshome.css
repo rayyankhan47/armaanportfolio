@@ -10,6 +10,10 @@ btn-down-white class?
 */
 
 
+body {
+    overflow-x: hidden;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -96,7 +100,8 @@ h3 {
 
 #header {
     /* The image below is what you see behind the 'I'm a..." typewriting text. */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(images/ArmaanPics/homepage.jpg) center/ cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(images/ArmaanPics/homepage.jpg) center/ cover no-repeat;
+    background-attachment: scroll;
     justify-content: flex-start;
     align-items: flex-end;
     min-height: calc(100vh - 40.594px);
@@ -423,6 +428,19 @@ h3 {
     transform: scaleX(1);
 }
 
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+    }
+}
+
+
 
 
 /* media queries */
@@ -526,4 +544,34 @@ h3 {
 
 footer {
     font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+    .header-content h1 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .header-content h3 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.about-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
 }
