@@ -310,6 +310,10 @@ h3 {
     padding: 0.5rem;
 }
 
+.lead {
+    margin-bottom: 2rem;
+}
+
 .contact-left form {
     margin-top: 3rem;
 }
