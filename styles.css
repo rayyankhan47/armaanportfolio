@@ -9,7 +9,6 @@ btn-down-white class?
 
 */
 
-
 body {
     overflow-x: hidden;
 }
@@ -222,6 +221,36 @@ h3 {
 #testimonials .title h2::after {
     background: var(--light-color);
 }
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1rem auto;
+    /* centers the whole icon horizontally */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* Hover effect */
+.icon:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+
 
 /* Testimonial grids styling */
 
@@ -679,4 +708,9 @@ footer {
     font-size: 1.6rem;
     text-align: center;
     color: var(--dark-color);
+}
+
+section {
+    padding: 5rem 0;
+    /* top and bottom spacing for all */
 }
