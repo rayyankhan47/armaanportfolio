@@ -12,10 +12,6 @@
             scroll-behavior: smooth;
         }
 
-        body {
-            background: linear-gradient(to bottom, #e0e0e0, #f5f5f5);
-        }
-
         .filter-buttons {
             display: flex;
             justify-content: center;
@@ -25,22 +21,27 @@
         }
 
         .filter-buttons button {
-            padding: 0.8rem 1.6rem;
-            font-size: 1.4rem;
+            padding: 1.2rem 2.4rem;
+            font-size: 1.6rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             border: none;
+            border-radius: 0;
             background-color: #332e29;
             color: white;
             cursor: pointer;
             transition: all 0.3s ease;
-            border-radius: 5px;
         }
 
         .filter-buttons button:hover,
         .filter-buttons button.active {
             background-color: #000;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
             transform: translateY(-2px);
         }
+
 
         .portfolio-grid.hide {
             display: none;
@@ -103,6 +104,7 @@
                     <button data-filter="weddings">Weddings</button>
                     <button data-filter="events">Events</button>
                     <button data-filter="landscapes">Landscapes</button>
+                    <button data-filter="graphic">Graphic Design</button>
                 </div>
             </div>
         </section>
@@ -160,6 +162,22 @@
             <div class="container">
                 <div class="title">
                     <h2>Landscapes</h2>
+                </div>
+                <div class="portfolio-grid grid">
+                    <a href="images/ArmaanPics/Landscapes/photo1.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Landscapes/photo1.jpg" alt="Landscape 1"></a>
+                    <a href="images/ArmaanPics/Landscapes/photo2.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Landscapes/photo2.jpg" alt="Landscape 2"></a>
+                    <a href="images/ArmaanPics/Landscapes/photo3.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Landscapes/photo3.jpg" alt="Landscape 3"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-7 portfolio-section" id="graphic">
+            <div class="container">
+                <div class="title">
+                    <h2>Graphic Design</h2>
                 </div>
                 <div class="portfolio-grid grid">
                     <a href="images/ArmaanPics/Landscapes/photo1.jpg" class="glightbox"><img

@@ -99,7 +99,7 @@ h3 {
 
 #header {
     /* The image below is what you see behind the 'I'm a..." typewriting text. */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(images/ArmaanPics/homepage.jpg) center/ cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(images/ArmaanPics/homepage.jpg) center/ cover no-repeat;
     background-attachment: scroll;
     justify-content: flex-start;
     align-items: flex-end;
@@ -742,4 +742,21 @@ section {
         /* adjust depending on content */
         padding: 2rem 0;
     }
+}
+
+/* Armaan Logo */
+
+.armaan-logo {
+    width: 400px;
+    /* increased from 160px */
+    max-width: 80%;
+    margin: 0 auto 2.5rem auto;
+    display: block;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+
+.armaan-logo:hover {
+    transform: scale(1.05);
 }
