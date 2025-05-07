@@ -714,3 +714,32 @@ section {
     padding: 5rem 0;
     /* top and bottom spacing for all */
 }
+
+/* mobile navbar hamburger menu smooth animation */
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        position: absolute;
+        background: white;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    .nav-toggle:checked+.nav-toggle-label+.nav-links {
+        max-height: 500px;
+        /* adjust depending on content */
+        padding: 2rem 0;
+    }
+}
