@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase Portfolio - Armaan Uddin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #e0e0e0, #f5f5f5);
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .filter-buttons button {
+            padding: 0.8rem 1.6rem;
+            font-size: 1.4rem;
+            border: none;
+            background-color: #332e29;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .filter-buttons button:hover,
+        .filter-buttons button.active {
+            background-color: #000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .portfolio-grid.hide {
+            display: none;
+        }
+
+        .back-home {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto;
+            font-size: 1.6rem;
+            padding: 1rem 2rem;
+            background-color: #332e29;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .title h2 {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .title h2.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="back-home">← Back to Home</a>
+        </div>
+    </nav>
+
+    <header class="vh-100 flex parallax"
+        style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('images/ArmaanPics/showcase-cover.jpg');">
+        <div class="container">
+            <div class="header-content">
+                <h1>Showcase</h1>
+                <h3>More from Armaan Uddin's Portfolio</h3>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-7">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="active" data-filter="portraits">Portraits</button>
+                    <button data-filter="weddings">Weddings</button>
+                    <button data-filter="events">Events</button>
+                    <button data-filter="landscapes">Landscapes</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Sections -->
+        <section class="py-7 portfolio-section" id="portraits">
+            <div class="container">
+                <div class="title">
+                    <h2>Portraits</h2>
+                </div>
+                <div class="portfolio-grid grid">
+                    <a href="images/ArmaanPics/Portraits/photo1.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Portraits/photo1.jpg" alt="Portrait 1"></a>
+                    <a href="images/ArmaanPics/Portraits/photo2.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Portraits/photo2.jpg" alt="Portrait 2"></a>
+                    <a href="images/ArmaanPics/Portraits/photo3.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Portraits/photo3.jpg" alt="Portrait 3"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-7 portfolio-section" id="weddings">
+            <div class="container">
+                <div class="title">
+                    <h2>Weddings</h2>
+                </div>
+                <div class="portfolio-grid grid">
+                    <a href="images/ArmaanPics/Weddings/photo1.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Weddings/photo1.jpg" alt="Wedding 1"></a>
+                    <a href="images/ArmaanPics/Weddings/photo2.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Weddings/photo2.jpg" alt="Wedding 2"></a>
+                    <a href="images/ArmaanPics/Weddings/photo3.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Weddings/photo3.jpg" alt="Wedding 3"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-7 portfolio-section" id="events">
+            <div class="container">
+                <div class="title">
+                    <h2>Events</h2>
+                </div>
+                <div class="portfolio-grid grid">
+                    <a href="images/ArmaanPics/Events/photo1.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Events/photo1.jpg" alt="Event 1"></a>
+                    <a href="images/ArmaanPics/Events/photo2.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Events/photo2.jpg" alt="Event 2"></a>
+                    <a href="images/ArmaanPics/Events/photo3.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Events/photo3.jpg" alt="Event 3"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-7 portfolio-section" id="landscapes">
+            <div class="container">
+                <div class="title">
+                    <h2>Landscapes</h2>
+                </div>
+                <div class="portfolio-grid grid">
+                    <a href="images/ArmaanPics/Landscapes/photo1.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Landscapes/photo1.jpg" alt="Landscape 1"></a>
+                    <a href="images/ArmaanPics/Landscapes/photo2.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Landscapes/photo2.jpg" alt="Landscape 2"></a>
+                    <a href="images/ArmaanPics/Landscapes/photo3.jpg" class="glightbox"><img
+                            src="images/ArmaanPics/Landscapes/photo3.jpg" alt="Landscape 3"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align:center; padding:2rem;">Website Designer: Rayyan Khan</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({ selector: '.glightbox' });
+
+        const buttons = document.querySelectorAll('.filter-buttons button');
+        const sections = document.querySelectorAll('.portfolio-section');
+
+        function showSection(filter) {
+            sections.forEach(sec => {
+                sec.style.display = sec.id === filter ? 'block' : 'none';
+                const heading = sec.querySelector('.title h2');
+                if (sec.id === filter) {
+                    heading.classList.remove('visible');
+                    void heading.offsetWidth;
+                    heading.classList.add('visible');
+                }
+            });
+        }
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                showSection(filter);
+            });
+        });
+
+        showSection('portraits');
+    </script>
+</body>
+
+</html>
